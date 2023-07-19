@@ -5,6 +5,9 @@
 :root {
     --primary-color:#0F1B4C;
     --primary-width:1110px;
+}
+body,html {
+    scroll-behavior: smooth;
 
 }
 html {
@@ -48,6 +51,9 @@ a {
 
 }
 .header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width:var(--primary-width);
     max-width:100%;
     height:100vh;
@@ -207,20 +213,8 @@ a {
     align-items: center;
     /* background-color: green; */
     padding: 0px 42px;
-    height: 80px; 
-}
-.client-logo-child:first-child {
-    transform: translateX(-17%);
-    /* margin-right: -18px; */
-}
-.client-logo-child:last-child {
-    transform: translateX(12%);
-}
-.client-logo-child:nth-child(2) {
-    margin-right:2px;
-}
-.client-logo-child:nth-child(3) {
-    transform: translateY(7%);
+    height:90px;
+    border-radius: 12px;
 
 }
 .client-logo-child:hover {
@@ -260,6 +254,7 @@ a {
     width:var(--primary-width);
     margin-left:auto;
     margin-right:auto;
+    padding-top: 1px;
 }
 
 .guilds .desc {
@@ -699,17 +694,20 @@ a {
 .socials {
     display: flex;
 }
-.socials i {
-    display: inline-block;
+.footer .socials-link  {
+    display: flex;
+    align-items:center;
+    justify-content: center;
     background-color: #F9F9F9;
     color:#646464;
-    padding: 5px 7px;
-    margin:0 8px;
+    width:28px;
+    height:28px;
+    margin:0 16px;
     border-radius:3px;
 }
-.socials i:hover {
+.socials-link:hover {
     /* background-color: #646464; */
-    opacity: 0.7;
+    background: #ebebeb;
 }
 .footer-bottom {
     display: flex;
